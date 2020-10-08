@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Super Silber Shooter!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="endscreen">
+        <div class="wrapper">
+            <div class="gameover"></div>
+            <div>
+                <h3 class="finalscore"> Final score: </h3>
+            </div>
+            <div><button type="button" class="restartBtn">Restart</button></div>
+        </div>
+    </div>
+    
+    <div class="game-container">
+        <div class="world">
+            <img src="assets/Terrain/supersilbershooter.png" alt="TitleCard" width="200" height="100">
+            <h3>Controls: WASD to move - SPACE to shoot at pythons</h3>
+            <h3>Score:
+                <t id="score">0</t>
+            </h3>
+            <h3> Health:
+                <t id="playerHealth"></t>
+            </h3>
+        </div>
+
+        <div class="character" id="character"></div>
+        <ul class="enemyList"></ul>
+        <ul class="projList"></ul>
+        <ul class="groundList"></ul>
+
+
+
+    </div>
+</body>
+
+</html>
