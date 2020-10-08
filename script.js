@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var direction = 1  //Tracks the direction of the character and any new projectiles ( 1 = right, -1 = left)
     var isMoving = 0 //Tracks if the player is moving or not (0 if still, 10 if moving)
     var jumpCount = 0 //Tracks if the player is jumping (0 if not jumping, >0 if jumping)
-    var playerHealth = 6000; //Tracks player health
+    var playerHealth = 3; //Tracks player health
     var score = 0; //Tracks player score
 
     //Game objects;
@@ -403,13 +403,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         while (groundArr.length < 25) {
             createGround();
-            if (groundArr.length == 25) {
-                increment = 0;
-                groundArr.forEach(e => {
-                    console.log(increment, $('#' + e.element).css('left'), e.x)
-                    increment++;
-                })
-            }
         }
     }
 
